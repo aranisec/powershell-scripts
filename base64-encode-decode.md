@@ -25,4 +25,5 @@ powershell -EncodedCommand .\base64script.txt
 ### To decode from base64 string
 ```
 $DecodedText = [System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String($EncodedText))
+$DecodedText = [System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String([System.IO.File]::ReadAllText("base64.txt")))
 ```
