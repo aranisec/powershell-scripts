@@ -4,10 +4,10 @@
 ```$Base64 = [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes([System.IO.File]::ReadAllText("script.ps1")))```
 
 ### To encode from text
-```$Text = ‘This is a secret and should be hidden’
+`$Text = ‘This is a secret and should be hidden’
 $Bytes = [System.Text.Encoding]::Unicode.GetBytes($Text)
 $EncodedText =[Convert]::ToBase64String($Bytes)
-$EncodedText```
+$EncodedText'
 
 ### To write encoded string to file 
 ```$Base64 > base64script.txt```
