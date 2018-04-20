@@ -6,5 +6,6 @@ $Base64 > base64script.txt
 
 ### To execute base64 encoded script 
 powershell -EncodedCommand $Base64
+
 powershell -EncodedCommand .\base64script.txt
 
